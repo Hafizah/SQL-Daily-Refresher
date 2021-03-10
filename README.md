@@ -1,2 +1,2 @@
 # SQL-Daily-Refresher
-My daily effort to strengthen and improve SQL queries. 
+Daily effort to strengthen and improve my knowledge on SQL queries. 
