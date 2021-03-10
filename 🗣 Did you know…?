@@ -4,3 +4,12 @@
 
 🗣 If a subquery (inner query) returns a null value to the outer query, the outer query will not return any rows when using certain comparison 
 operators in a WHERE clause.
+
+🗣 NULL is a special marker used to indicate that a data value does not exist in the database.
+
+🗣 GROUP BY treats NULLs as valid values. Which means, rows with an unassigned values, will be counted and assigned to an empty space.
+Example: Group by department - IT = 2, MED= 4, " " = 3
+USE this to assign:
+    SELECT coalesce(department,'Unassigned department'), count(*) 
+    FROM employee 
+    GROUP BY department;
