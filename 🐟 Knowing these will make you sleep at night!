@@ -54,3 +54,7 @@ NVL2 has different logic. If first argument is not null then NVL2 returns second
 🐟 Single Row Function
  Return a single result row for every row of a queried table or view. 
  These functions can appear in select lists, WHERE clauses, START WITH and CONNECT BY clauses, and HAVING clauses.
+ 
+ 🐟 Coalesce Function
+Returns the first non-null value in a list. 
+        SELECT COALESCE(NULL, 1, 2, 'fish') ----------> 1
