@@ -26,3 +26,9 @@
 🐟 Subqueries Operator
 - Comparison, Equality, Like
 
+🐟 
+TRUNCATE: DLL- deletes the data inside a table, but not the table itself.
+DELETE: DML- delete existing records in a table.
+DROP: DLL- deletes a table in the database.
+
+
