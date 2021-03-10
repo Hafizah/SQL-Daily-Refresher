@@ -17,6 +17,15 @@
 - DML commands are not auto-committed, they are not permanent. So, It is possible to roll back the operation.
 - DML effects one or more rows.
 
+🐟 Subquery
+- A subquery must be enclosed in parentheses. 
+- A subquery must be placed on the right side of the comparison operator. 
+- Subqueries cannot manipulate their results internally, therefore ORDER BY clause cannot be added into a subquery. 
+- You can use an ORDER BY clause in the main SELECT statement (outer query) which will be the last clause.
+- Use single-row operators with single-row subqueries. 
+- If a subquery (inner query) returns a null value to the outer query, the outer query will not return any rows when using certain comparison 
+operators in a WHERE clause.
+
 🐟 Subqueries Clauses
 - FROM, WHERE, HAVING
 
@@ -41,3 +50,7 @@ NVL2 has different logic. If first argument is not null then NVL2 returns second
 
     select nvl2('arg1', 'arg2', 'arg3') from dual ----------> Result: arg2
     select nvl2(null, 'arg2', 'arg3') from dual ----------> Result: arg3
+
+🐟 Single Row Function
+ Return a single result row for every row of a queried table or view. 
+ These functions can appear in select lists, WHERE clauses, START WITH and CONNECT BY clauses, and HAVING clauses.
