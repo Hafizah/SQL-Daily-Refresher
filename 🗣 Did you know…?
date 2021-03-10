@@ -1,2 +1,2 @@
 🗣 ORDER BY command cannot be used in a Subquery. GROUPBY command can be used to perform same function as ORDER BY command.
-🗣
+🗣 The WHERE clause helps specifies which record(s) will be deleted. If you omit the WHERE clause, all records in the table will be deleted!
