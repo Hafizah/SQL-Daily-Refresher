@@ -31,4 +31,13 @@ TRUNCATE: DLL- deletes the data inside a table, but not the table itself.
 DELETE: DML- delete existing records in a table.
 DROP: DLL- deletes a table in the database.
 
+🐟 NVL and NVL2 in Oracle
+NVL checks if first argument is null and returns second argument:
 
+    select nvl(null, 'arg2') from dual ----------> in this example result will be: arg2;
+    select nvl('arg1', 'arg2') from dual ----------> and in this one: arg1;
+
+NVL2 has different logic. If first argument is not null then NVL2 returns second argument, but in other case it will return third argument:
+
+    select nvl2('arg1', 'arg2', 'arg3') from dual ----------> Result: arg2
+    select nvl2(null, 'arg2', 'arg3') from dual ----------> Result: arg3
