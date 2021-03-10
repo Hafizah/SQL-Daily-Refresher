@@ -1,0 +1,28 @@
+🐟 DLL (Data Definition Language)
+- It is used to create database schema and can be used to define some constraints as well.
+- It basically defines the column (Attributes) of the table.
+- It doesn’t have any further classification.
+- Basic command present in DDL are CREATE, DROP, RENAME, ALTER, TRUNCATE, COMMENT etc.
+- DDL does not use WHERE clause in its statement.
+- Its commands are auto-committed, the changes are saved in the database permanently. 
+- DDL statements affect the whole table.
+
+
+🐟 DML (Data Manipulation Language)
+- It is used to add, retrieve or update the data.
+- It add or update the row of the table. These rows are called as tuple.
+- It is further classified into Procedural and Non-Procedural DML.
+- BASIC command:  UPDATE, INSERT, MERGE, DELETE, CALL etc.
+- While DML uses WHERE clause in its statement.
+- DML commands are not auto-committed, they are not permanent. So, It is possible to roll back the operation.
+- DML effects one or more rows.
+
+🐟 Subqueries Clauses
+- FROM, WHERE, HAVING
+
+🐟 Subqueries Statements
+-  SELECT, UPDATE, INSERT, DELETE
+
+🐟 Subqueries Operator
+- Comparison, Equality, Like
+
